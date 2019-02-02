@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <title>QuemQuerComer</title>
+    <style>
+    	.text-centered{
+    		text-align: center;
+    	}
+    </style>
+</head>
+
+<body>
+		<nav class="navbar bg-inverse navbar-dark"> 
+			<a href="#" class="navbar-brand">
+				<img src="assets/img/icone-aplicativo.png" style="width: 30px; height: auto" class="d-inline-block align-top"> QuemQuerComer
+			</a>
+			<button class="navbar-toggler hidden-md-up float-sm-right float-xs-right" type="button" data-toggle="collapse" data-target="#menu-sanduiche"></button>
+			<div class="collapse navbar-toggleable-sm" id="menu-sanduiche">
+				<ul class="nav navbar-nav">
+					<li class="nav-item">
+						<a href="#" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Funcionários</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Opções</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item">Última semana</a>
+							<a href="#" class="dropdown-item">Filtrar por funcionário</a>
+							<a href="#" class="dropdown-item">Filtrar por data</a>
+							<a href="#" class="dropdown-item">Gerar mensagem</a>
+						</div>
+					</li>
+				</ul>
+				<form class="form-inline float-md-right">
+					<img src="assets/img/icone-empresa.png" style="width: 30px; height: auto" class="d-inline-block align-top"><h9 class="text" style="color: white"> Sorrir Tecnologia</h9>
+				</form>
+			</div>
+		</nav>
+	<!-- *** FIM - Barra de navegação (navbar) *** -->
+	<div class="container">
+		<!-- **** Jumbotron **** -->
+		<div class="jumbotron">
+			<h1 class="display-4">Última semana</h1><br>
+			<p class="lead">Todos os funcionários</p>
+			<hr class="my-2">
+		</div>
+		<!-- **** FIM - Jumbotron **** -->
+		<!-- **** Imagens **** -->
+		<div class="container">
+			<table class="table table-bordered" style="width: 100%;table-layout:fixed">
+    			<thead>
+      				<tr>
+				        <th>Semana: 21/01 a 25/01</th>
+        				<th>Segunda-feira</th>
+				        <th>Terça-feira</th>
+				        <th>Quarta-feira</th>
+				        <th>Quinta-feira</th>
+				        <th>Sexta-feira</th>
+      				</tr>
+    			</thead>
+    			<tbody>
+      				<tr>
+      					<td></td>
+				        <td>Cafta, Bife, Steak</td>
+				        <td>Frango, Hambúrguer, Salsicha</td>
+				        <td>Caneloni, Filé, Bolinho</td>
+				        <td>Costelinhas, Calabresa, Fígado</td>
+				        <td>Almôndegas, Filé, Linguiça</td>
+      				</tr>
+      				<tr>
+      					<td>Jorge</td>
+				        <td>Cafta</td>
+				        <td>Frango</td>
+				        <td>Caneloni</td>
+				        <td>Fígado</td>
+				        <td>Linguiça</td>
+      				</tr>
+      				<tr>
+      					<td>Cunha</td>
+				        <td>Bife</td>
+				        <td>----</td>
+				        <td>Caneloni</td>
+				        <td>Fígado</td>
+				        <td>Linguiça</td>
+      				</tr>
+      				<tr>
+      					<td>Dr.Rey</td>
+				        <td>Steak</td>
+				        <td>---</td>
+				        <td>Caneloni</td>
+				        <td>Fígado</td>
+				        <td>Linguiça</td>
+      				</tr>
+      				<tr>
+      					<td>Um maluco no pedaço</td>
+				        <td>Steak</td>
+				        <td>Salsicha</td>
+				        <td>Bolinho</td>
+				        <td>Fígado</td>
+				        <td>Almôndegas</td>
+      				</tr>
+    			</tbody>
+  			</table>
+		</div>
+		<!-- **** Acordeão/Sanfona **** -->
+		<div class="row">
+			<div id="accordion" role="tablist">
+				<!-- **** Form Horizontal **** -->
+				<div class="card"> <!-- vai fazer o papel de um nó como um todo -->
+					<div class="card-header" role="tab" id="filtro-cabecalho">
+						<h5 class="mb-0">
+							<a data-toggle="collapse" data-parent="#accordion" href="#filtrar-funcionario">
+								Personalizar filtro
+							</a>
+						</h5>
+					</div>
+					<div id="filtrar-funcionario" class="collapse" role="tabpanel">
+						<div class="card-block">
+							<form class="form-inline">
+								<div class="form-group">
+									<label for="txt-name">Nome</label>
+									<input type="text" class="form-control" id="txt-name">
+									<label for="txt-data-inicial">Data Inicial</label>
+									<input type="date" class="form-control" id="txt-data-inicial">
+									<label for="txt-data-final">Data Final</label>
+									<input type="date" class="form-control" id="txt-data-final">
+								</div>
+								<button type="button" class="btn-success">Pesquisar</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<!-- **** FIM - Acordeão/Sanfona **** -->
+	</div>
+    <script src="assets/js/jquery-3.1.0.js"></script>
+    <script src="assets/js/tether.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+</body>
+
+</html>
+
+<!-- viewport: onde a página fica responsiva pelo bootstrap -->
+<!-- Baixar package 'atom-beautify' (opcional) -->
+<!-- CTRL + ALT + B : formatar e identar código -->
+<!-- Jumbotrons: usado para dar ênfase em um pequene trecho de informação -->
+<!-- Cards: servem como containers de informação -->
+<!-- Acordeões: otimizar espaço -->
+<!-- Grid System só funciona dentro de uma div com classe Container -->
